@@ -4,6 +4,7 @@ FROM fedora:34
 ENV BUILDAH_VERSION="1.20.0"
 
 RUN dnf update -y \
+    && dnf upgrade -y \
     && dnf install -y buildah-${BUILDAH_VERSION} \
   	&& dnf clean all \
   	&& rm -rf /var/cache/dnf
