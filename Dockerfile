@@ -3,7 +3,8 @@ FROM fedora:34
 # renovate: datasource=repology depName=fedora_34/buildah
 ENV BUILDAH_VERSION="1.20.0"
 
-RUN dnf install -y buildah-${BUILDAH_VERSION} \
+RUN dnf update -y \
+    && dnf install -y buildah-${BUILDAH_VERSION} \
   	&& dnf clean all \
   	&& rm -rf /var/cache/dnf
 
