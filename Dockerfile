@@ -9,7 +9,7 @@ RUN dnf install -y buildah-${BUILDAH_VERSION} \
 
 ENV STORAGE_DRIVER=vfs
 
-# renovate: datasource=github-releases depName=aquasecurity/trivy versioning=loose
+# renovate: datasource=github-releases depName=aquasecurity/trivy
 ENV TRIVY_VERSION="0.18.3"
 
 RUN rpm -ivh https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.rpm
