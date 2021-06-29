@@ -1,4 +1,4 @@
-FROM fedora:34
+FROM fedora:35
 
 # renovate: datasource=repology depName=fedora_34/buildah
 ENV BUILDAH_VERSION="1.20.0"
