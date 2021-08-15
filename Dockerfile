@@ -1,7 +1,7 @@
 FROM fedora:34
 
 # renovate: datasource=repology depName=fedora_34/buildah versioning=loose
-ENV BUILDAH_VERSION="1.21.4-5.fc34"
+ENV BUILDAH_VERSION="1.22.0-2.fc34"
 
 RUN dnf install -y buildah-${BUILDAH_VERSION} \
   	&& dnf clean all \
