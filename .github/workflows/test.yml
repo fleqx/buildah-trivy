@@ -5,7 +5,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: docker
       run: docker build -t ${{ github.repository }}:${{ github.sha }} --build-arg version=0.0.0-merge.0 .
