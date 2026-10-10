@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 0
     - uses: actions/setup-node@v2
       with:
-        node-version: '16'
+        node-version: '24'
 
     - name: prepare
       run: npm install @semantic-release/github @semantic-release/exec conventional-changelog-conventionalcommits
